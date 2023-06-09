@@ -10,6 +10,7 @@ import javax.persistence.*;
         @NamedStoredProcedureQuery(name = "getAllBlogs",procedureName = "getAllBlogs"),
         @NamedStoredProcedureQuery(name = "getBlogsByTitle", procedureName = "getBlogsByTitle",
                 parameters = {@StoredProcedureParameter(mode = ParameterMode.IN,name = "tblogTitle",type=String.class)} )})
+
 public class Blog {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

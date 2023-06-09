@@ -1,5 +1,6 @@
 package com.trxjster.springstoredprocedures.service;
 
+import com.trxjster.springstoredprocedures.entity.Blog;
 import com.trxjster.springstoredprocedures.repository.BlogRepository;
 import org.springframework.stereotype.Service;
 
@@ -23,7 +24,7 @@ public class BlogService {
     public List getTotalBlogs(){
         return em.createNamedStoredProcedureQuery("getAllBlogs").getResultList();
     }
-    public List getBlogsByTitle(String title) {
+    public List<Blog> getBlogsByTitle(String title) {
         return em.createNamedStoredProcedureQuery("getBlogsByTitle").setParameter("tblogTitle",title).getResultList();
     }
 }
