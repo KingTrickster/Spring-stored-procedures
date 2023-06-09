@@ -1,7 +1,7 @@
-package com.trxjster.springstoredprocedures.service;
+package com.trxjster.springstoredprocedures.v1.service;
 
-import com.trxjster.springstoredprocedures.entity.Blog;
-import com.trxjster.springstoredprocedures.repository.BlogRepository;
+import com.trxjster.springstoredprocedures.v1.entity.Blog;
+import com.trxjster.springstoredprocedures.v1.repository.BlogRepository;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityManager;

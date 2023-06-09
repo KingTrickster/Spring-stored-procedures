@@ -1,6 +1,6 @@
-package com.trxjster.springstoredprocedures.repository;
+package com.trxjster.springstoredprocedures.v1.repository;
 
-import com.trxjster.springstoredprocedures.entity.Blog;
+import com.trxjster.springstoredprocedures.v1.entity.Blog;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface BlogRepository extends JpaRepository<Blog, Long> {

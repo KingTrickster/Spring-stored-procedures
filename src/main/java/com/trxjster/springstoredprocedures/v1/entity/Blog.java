@@ -1,4 +1,4 @@
-package com.trxjster.springstoredprocedures.entity;
+package com.trxjster.springstoredprocedures.v1.entity;
 
 import lombok.Data;
 
